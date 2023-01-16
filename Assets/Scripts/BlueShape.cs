@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// INHERITANCE
 public class BlueShape : Shape
 {
     

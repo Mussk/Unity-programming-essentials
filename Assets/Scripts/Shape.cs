@@ -9,6 +9,7 @@ public class Shape : MonoBehaviour
     [SerializeField]
     protected TextMeshProUGUI infoText;
 
+    // ENCAPSULATION
     private string m_Name = "";
     public string Name {
         get {
@@ -52,6 +53,7 @@ public class Shape : MonoBehaviour
         
     }
 
+    // POLYMORPHISM
     public virtual void DisplayText() {
 
         if (!infoText.IsActive()) {
@@ -59,7 +61,7 @@ public class Shape : MonoBehaviour
             infoText.gameObject.SetActive(true);
         
         }
-
+        // ABSTRACTION
         infoText.text = "Hello! I am: " + Material.color.ToString() + " shape! My name is " + m_Name.ToString();  
        
     } 
